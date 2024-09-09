@@ -1,11 +1,48 @@
 
 ngx-charts-pie-chart {
- display: flex;
-  width: 30%;
-  height: 300px;
-  margin-left:830px;
-  margin-top:-290px;
+  display: flex;
+  width: 20px;
+  margin-left: 920px;
+  margin-top: -300px;
   box-sizing: border-box;
+}
+
+ngx-charts-pie-chart .slice {
+  transition: transform 0.3s ease; /* Adicione uma transição suave para animações */
+}
+
+ngx-charts-pie-chart .slice:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+ngx-charts-pie-chart .ngx-charts-legend {
+  display: none; /* Esconde a legenda do gráfico */
+}
+
+
+
+.legend-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.legend-bullet {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #000; /* Cor da bolinha */
+  margin-right: 8px;
+}
+
+.legend-text {
+  font-size: 14px;
 }
 
 .chart-container {
@@ -21,9 +58,10 @@ ngx-charts-pie-chart {
 }
 
 .chart-container h2 {
-  margin-top:-20px;
+  margin-top:-10px;
   font-size: 15px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
 }
+
