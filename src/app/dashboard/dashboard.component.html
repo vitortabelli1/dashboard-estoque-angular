@@ -1,0 +1,49 @@
+<div class="dashboard-content">
+  <!-- Indicators -->
+  <div class="dashboard-indicators">
+    <mat-card class="indicator-card">
+      <mat-card-title>
+        Faturamento
+      </mat-card-title>
+      <mat-card-content>
+        R$ {{ totalFaturamento | number: '1.2-2' }}
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="indicator-card">
+      <mat-card-title>
+        Valor de Estoque
+      </mat-card-title>
+      <mat-card-content>
+        R$ {{ totalValorEstoque | number: '1.2-2' }}
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="indicator-card">
+      <mat-card-title>
+        Ruptura de Estoque
+      </mat-card-title>
+      <mat-card-content>
+        {{ totalRupturaEstoque }}
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="indicator-card">
+      <mat-card-title>
+        Giro de Estoque
+      </mat-card-title>
+      <mat-card-content>
+        {{ totalGiroEstoque }}
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <!-- Charts and Tables -->
+  <div class="dashboard-charts">
+    <!-- Add your charts here -->
+  </div>
+
+  <div class="dashboard-table">
+    <!-- Add your tables here -->
+  </div>
+</div>

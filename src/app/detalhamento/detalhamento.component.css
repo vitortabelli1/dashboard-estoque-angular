@@ -1,0 +1,16 @@
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #222; /* Cor do fundo semelhante à imagem */
+    padding: 40px;
+    margin-top:-900px;
+    margin-left:100px;
+    border-radius: 10px; /* Borda arredondada */
+    font-size: 12px; /* Letra pequena */
+    max-width:10px;
+    height:20px;
+    color: white; /* Texto branco */
+  }
+  
+  
+  

@@ -1,0 +1,20 @@
+.chart-container {
+    padding: 20px;
+    background-color: #171616; /* Cor de fundo suave */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve para destacar */
+    margin-left:910px;
+    height:200px;
+    max-width: 200px; /* Largura máxima do container */
+    margin-top:-800px;
+
+  }
+  
+  h2 {
+    font-size: 15px;
+    margin-top:-79px;
+    margin-bottom: 20px;
+    color: #e8e7e7; /* Cor do texto do título */
+    text-align: center; /* Alinha o título ao centro */
+  }
+  

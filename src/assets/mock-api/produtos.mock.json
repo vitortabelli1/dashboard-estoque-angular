@@ -1,0 +1,72 @@
+[
+  {
+    "nome": "Geladeira Brastemp",
+    "categoria": "Refrigeração",
+    "qtdEstoque": 150,
+    "valorEstoque": 345000,
+    "classABC": "A"
+  },
+  {
+    "nome": "Máquina de Lavar LG",
+    "categoria": "Lavagem",
+    "qtdEstoque": 85,
+    "valorEstoque": 204000,
+    "classABC": "B"
+  },
+  {
+    "nome": "Fogão Consul",
+    "categoria": "Cozinha",
+    "qtdEstoque": 120,
+    "valorEstoque": 144000,
+    "classABC": "A"
+  },
+  {
+    "nome": "Micro-ondas Panasonic",
+    "categoria": "Cozinha",
+    "qtdEstoque": 200,
+    "valorEstoque": 80000,
+    "classABC": "C"
+  },
+  {
+    "nome": "Ar Condicionado Samsung",
+    "categoria": "Climatização",
+    "qtdEstoque": 50,
+    "valorEstoque": 500000,
+    "classABC": "A"
+  },
+  {
+    "nome": "Ventilador Mondial",
+    "categoria": "Climatização",
+    "qtdEstoque": 180,
+    "valorEstoque": 54000,
+    "classABC": "B"
+  },
+  {
+    "nome": "Purificador de Água Electrolux",
+    "categoria": "Filtragem",
+    "qtdEstoque": 75,
+    "valorEstoque": 60000,
+    "classABC": "C"
+  },
+  {
+    "nome": "Aspirador de Pó Philips",
+    "categoria": "Limpeza",
+    "qtdEstoque": 90,
+    "valorEstoque": 90000,
+    "classABC": "B"
+  },
+  {
+    "nome": "Cafeteira Nespresso",
+    "categoria": "Cozinha",
+    "qtdEstoque": 300,
+    "valorEstoque": 150000,
+    "classABC": "A"
+  },
+  {
+    "nome": "Secador de Cabelo Taiff",
+    "categoria": "Cuidados Pessoais",
+    "qtdEstoque": 130,
+    "valorEstoque": 39000,
+    "classABC": "C"
+  }
+]

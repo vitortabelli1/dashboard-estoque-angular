@@ -1,0 +1,21 @@
+<table class="detalhamento-table">
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Qtd. de Estoque</th>
+        <th>Valor Estoque</th>
+        <th>Class. ABC</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of produtos">
+        <td>{{ produto.nome }}</td>
+        <td>{{ produto.categoria }}</td>
+        <td>{{ produto.qtdEstoque }}</td>
+        <td>R$ {{ produto.valorEstoque | number: '1.2-2' }}</td>
+        <td>{{ produto.classABC }}</td>
+      </tr>
+    </tbody>
+  </table>
+  
