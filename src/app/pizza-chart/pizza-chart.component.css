@@ -51,8 +51,8 @@ ngx-charts-pie-chart .ngx-charts-legend {
   margin-top:30px;
   margin-left:850px;
   padding: 20px;
-  background-color: #ecebeb;
-  border:2px solid rgb(235, 234, 234);
+  background-color: #ffffff;
+  border:2px solid rgb(238, 238, 240);
   border-radius: 10px;
   text-align: center;
 }

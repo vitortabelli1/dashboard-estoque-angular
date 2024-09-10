@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { PizzaChartDataService } from '../services/pizza-chart-data.service'; // Importe o serviço
+import { PizzaChartDataService } from '../services/pizza-chart-data.service';
 
 @Component({
   selector: 'app-pizza-chart',
@@ -14,9 +14,8 @@ export class PizzaChartComponent implements OnInit {
 
   pieChartData: any[] = [];
 
-  // Definir esquema de cores
   colorScheme = {
-    domain: ['#FF5733', '#33FF57', '#3357FF', '#FF33A1', '#A133FF'] // Cores para cada categoria
+    domain: ['#B2FF59', '#76FF03', '#64DD17', '#43A047', '#388E3C']
   };
 
   width: number = 200;
@@ -27,10 +26,9 @@ export class PizzaChartComponent implements OnInit {
   ngOnInit(): void {
     this.pizzaChartDataService.getPieChartData().subscribe({
       next: (data: any[]) => {
-        // Formatar os dados para o gráfico de pizza
         this.pieChartData = data.map(item => ({
-          name: item.nome, // Nome para o gráfico
-          value: item.valorEstoque // Valor para o gráfico
+          name: item.nome,
+          value: item.valorEstoque
         }));
       },
       error: (err: any) => {

@@ -14,7 +14,7 @@
   
   .indicator-card {
     flex: 1 1 120px; /* Permite que os cartões se ajustem automaticamente */
-    max-width: 200px; /* Largura máxima menor */
+    max-width: 300px; /* Largura máxima menor */
     max-height: 90px; /* Altura máxima menor */
     margin: 4px; /* Margem ao redor dos cartões */
     padding: 4px; /* Padding interno dos cartões */
@@ -26,16 +26,11 @@
     font-size: 12px; /* Reduz o tamanho da fonte geral no cartão */
   }
   
-  .mat-card-title {
-    display: flex;
-    align-items: center;
-    line-height: 1.2; /* Ajusta o espaçamento entre linhas */
-    overflow: hidden; /* Garante que o texto não saia do cartão */
-    text-overflow: ellipsis; /* Adiciona reticências se o texto for muito longo */
-    white-space: nowrap; /* Garante que o texto não quebre linha */
-  }
-  .dashboard-content .indicator-card mat-card-title {
-    font-size: 15px; /* Defina o tamanho da fonte desejado */
-    font-weight: normal; /* Ajuste o peso da fonte, se necessário */
+  .indicator-card mat-card-title {
+    font-size: 14px; /* Tamanho da fonte do título do cartão */
   }
   
+  .indicator-card mat-card-content {
+    font-size: 20px; /* Tamanho da fonte do conteúdo do cartão */
+    color: #464646; /* Cor do texto do conteúdo do cartão */
+  }

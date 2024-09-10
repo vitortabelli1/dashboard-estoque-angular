@@ -7,7 +7,7 @@ h2 {
   
   .detalhamento-table {
     width: 50%;
-    margin-top: -250px;
+    margin-top: -344px;
     margin-left: 300px;
  
     border-collapse: collapse; /* Remove espaços entre as bordas */
@@ -25,14 +25,14 @@ h2 {
 }
 
 .detalhamento-table th, .detalhamento-table td {
-    border: 1px solid #d9d9d9; /* Bordas finas */
+
     padding: 8px; /* Espaçamento interno */
     text-align: center; /* Alinhamento do texto ao centro */
-    border: 2px solid rgb(139, 139, 139);
+    border: 2px solid rgb(239, 236, 236);
 }
 
 .detalhamento-table th {
-    background-color: #f4f4f4; /* Cor de fundo para o cabeçalho */
+  background-color: rgb(220, 227, 234);
     font-weight: bold; /* Negrito no cabeçalho */
 }
 

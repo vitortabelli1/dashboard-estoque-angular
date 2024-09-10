@@ -1,35 +1,58 @@
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: rgb(245, 246, 247);
-    color:white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    
-  }
-  
-  .sidebar mat-icon {
-    color: rgb(15, 14, 14);
-    margin-right: 10px;
-  }
-  
-  .sidebar a {
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    text-decoration: none;
-  }
-  
-  .sidebar a:hover {
-    background-color: #a8ef87;
-  }
-  
-  .sidebar a.mat-list-item {
-    border-radius: 4px;
-  }
-  
+  width: 250px;
+  height: 100vh;
+  background-color: rgb(220, 227, 234); /* Fundo da sidebar */
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+
+
+  padding: 10px;
+}
+
+.sidebar a {
+  text-decoration: none; /* Remove o sublinhado dos links */
+  padding: 8px 16px; /* Espaçamento interno */
+  display: flex; /* Organiza o ícone e o texto em linha */
+  color: #6f95c6; /* Cor do texto */
+  background-color: transparent; /* Garante que o fundo inicial seja transparente */
+  border-radius: 4px; /* Bordas arredondadas */
+  width: 100%; /* Faz os itens ocuparem a largura total */
+  justify-content: flex-start; /* Mantém o ícone e o texto alinhados à esquerda */
+}
+
+.menu-title {
+  font-size: 14px; /* Tamanho do texto do título */
+  margin-top:50px;
+  margin-left: 60px;
+  color: #939595; /* Cor do texto do título */
+  font-weight: bold;
+  margin-bottom: 20px; /* Espaço abaixo do título */
+}
+
+.sidebar mat-icon {
+  margin-right: 10px;
+  color: #6f95c6; /* Cor dos ícones */
+}
+
+.sidebar .menu-text {
+  color: #460a58; /* Cor do texto */
+  font-size: 14px; /* Tamanho do texto */
+}
+
+.sidebar a:hover {
+  background-color: rgb(207, 210, 250);
+  border-bottom: 1px solid rgb(146, 48, 149); /* Risco azul menor */
+  padding-bottom: 4px; /* Espaçamento entre o texto e o risco */
+  color: #0033FF; /* Altera a cor do texto no hover */
+}
+
+.sidebar a:hover .menu-text, .sidebar a:hover mat-icon {
+  color: #0033FF; /* Cor do texto e ícone no hover */
+}
+
+.sidebar a.mat-list-item:hover {
+  background-color: transparent; /* Remove o fundo padrão do mat-list-item no hover */
+}
