@@ -1,67 +1,49 @@
-
-ngx-charts-pie-chart {
+/* Container principal que alinha o gráfico e a legenda */
+.chart-container {
   display: flex;
-  width: 20px;
-  margin-left: 920px;
-  margin-top: -300px;
+  flex-direction: row; /* Alinha o gráfico e a legenda horizontalmente */
+  align-items: flex-start; /* Alinha o gráfico e a legenda no início do container */
+  justify-content: flex-end; /* Alinha o gráfico e a legenda no final do container */
+  width: 30%; /* Ajusta a largura do container ao tamanho disponível */
+  height: 49%;
+  margin: 20px; /* Espaçamento ao redor do container */
+  padding: 20px;
+  margin-left:800px;
+  border-radius:10px;
   box-sizing: border-box;
+  border: 2px solid #f9f8f8;
+  background-color: #f9f8f8;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-ngx-charts-pie-chart .slice {
-  transition: transform 0.3s ease; /* Adicione uma transição suave para animações */
+/* Estilo para o ngx-charts-pie-chart */
+ngx-charts-pie-chart {
+  width: 180px; /* Ajusta a largura do gráfico conforme necessário */
+  margin-top:-100px;
+ 
 }
 
-ngx-charts-pie-chart .slice:hover {
-  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
-}
-
-ngx-charts-pie-chart .ngx-charts-legend {
-  display: none; /* Esconde a legenda do gráfico */
-}
-
-
-
+/* Estilo para a legenda personalizada */
 .legend-container {
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+  flex-direction: column; /* Alinha itens da legenda em coluna */
+  margin-top: 40px; /* Remove a margem superior para que a legenda fique ao lado do gráfico */
 }
 
 .legend-item {
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  list-style: none; /* Remove bullets da lista */
 }
 
-.legend-bullet {
-  width: 12px;
-  height: 12px;
+.legend-color {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
-  background-color: #000; /* Cor da bolinha */
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
-.legend-text {
-  font-size: 14px;
+.legend-name {
+  font-size: 10px;
 }
-
-.chart-container {
-  max-width: 300px;
-  height: 200px;
-  margin-top:30px;
-  margin-left:850px;
-  padding: 20px;
-  background-color: #ffffff;
-  border:2px solid rgb(238, 238, 240);
-  border-radius: 10px;
-  text-align: center;
-}
-
-.chart-container h2 {
-  margin-top:-10px;
-  font-size: 15px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #333;
-}
-

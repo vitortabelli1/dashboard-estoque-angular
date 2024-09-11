@@ -1,5 +1,61 @@
+/* Estiliza o contêiner do componente de gráfico */
 :host {
-    display: block;
-    margin: 0 auto;
-  }
-  
+    display: flex;
+    position: absolute; /* Usa posicionamento absoluto */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    margin-top: 530px;
+    margin-right:50px;
+    border: 2px solid #f9f8f8;
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #f9f8f8;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estiliza o gráfico */
+
+/* Estiliza os rótulos do eixo Y */
+ngx-charts-bar-vertical .y-axis text {
+    font-size: 10px; /* Ajusta o tamanho da fonte dos rótulos do eixo Y */
+    fill: #333; /* Cor do texto dos rótulos do eixo Y */
+}
+
+/* Estiliza os rótulos do eixo X */
+ngx-charts-bar-vertical .x-axis text {
+    font-size: 10px; /* Ajusta o tamanho da fonte dos rótulos do eixo X */
+    fill: #333; /* Cor do texto dos rótulos do eixo X */
+}
+
+/* Estiliza os rótulos dos dados nas barras */
+ngx-charts-bar-vertical .bar text {
+    font-size: 10px; /* Ajusta o tamanho da fonte dos rótulos dos dados */
+    fill: #fff; /* Cor do texto dos rótulos dos dados */
+}
+
+/* Estiliza os tooltips que aparecem ao passar o mouse sobre as barras */
+ngx-charts-bar-vertical .tooltip {
+    font-size: 10px; /* Ajusta o tamanho da fonte dos tooltips */
+    padding: 4px; /* Ajusta o padding dos tooltips */
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    border-radius: 4px;
+}
+
+/* Estiliza a legenda, se visível */
+ngx-charts-bar-vertical .legend {
+    font-size: 10px; /* Ajusta o tamanho da fonte da legenda */
+    fill: #333;
+}
+
+/* Ajusta o estilo das barras */
+ngx-charts-bar-vertical .bar rect {
+    stroke: #fff; /* Cor da borda das barras */
+    stroke-width: 1px;
+}
+
+/* Estiliza os títulos dos eixos, se visível */
+ngx-charts-bar-vertical .axis-label text {
+    font-size: 12px; /* Ajusta o tamanho da fonte dos títulos dos eixos */
+    fill: #333;
+}

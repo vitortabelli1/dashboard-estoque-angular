@@ -1,30 +1,50 @@
 import { Component } from '@angular/core';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @Component({
   selector: 'app-bar-chart',
-  standalone:true,
+  standalone: true,
   templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css']
+  styleUrls: ['./bar-chart.component.css'],
+  imports: [NgxChartsModule] // Importa o módulo necessário aqui
 })
 export class BarChartComponent {
-  barChartData = [
-    { name: 'Produto A', value: 5000 },
-    { name: 'Produto B', value: 3000 },
-    { name: 'Produto C', value: 4000 },
-    { name: 'Produto D', value: 6000 }
+  // Dados para o gráfico
+  dataVBC = [
+    {
+      "name": "2020",
+      "value": 5000
+    },
+    {
+      "name": "2021",
+      "value": 6000
+    },
+    {
+      "name": "2022",
+      "value": 7000
+    },
+    {
+      "name": "2023",
+      "value": 8000
+    }
   ];
 
-  barChartView: [number, number] = [700, 400]; // Largura e altura do gráfico
-  barChartShowXAxis = true;
-  barChartShowYAxis = true;
-  barChartGradient = false;
-  barChartShowLegend = true;
+  // Configuração do gráfico
+  viewVBC: [number, number] = [270, 200]; // Tamanho do gráfico
+  animationsVBC = true; // Ativa animações
+  legendVBC = false; // Remove a legenda
+  xAxisVBC = true; // Exibe o eixo X
+  yAxisVBC = true; // Exibe o eixo Y
+  showYAxisLabelVBC = false; // Remove o rótulo do eixo Y
+  yAxisLabelVBC = ""; // Remove o texto do rótulo do eixo Y
 
-  // Adicione as propriedades para os rótulos dos eixos
-  barChartXAxisLabel = 'Categoria';
-  barChartYAxisLabel = 'Valor';
+  // Formatação dos rótulos dos dados
+  dataLabelFormatterVBC(tooltipText: any) {
+    return "$" + tooltipText + " trillion";
+  }
 
-  barChartColorScheme = {
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
+  // Esquema de cores
+  colorScheme = {
+    domain: ['#5AA454'] // Defina a cor do gráfico aqui
   };
 }

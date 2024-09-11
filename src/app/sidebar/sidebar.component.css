@@ -1,7 +1,7 @@
 .sidebar {
   width: 250px;
   height: 100vh;
-  background-color: rgb(220, 227, 234); /* Fundo da sidebar */
+  background-color: rgb(247, 245, 245); /* Fundo da sidebar */
   color: white;
   position: fixed;
   top: 0;

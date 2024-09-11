@@ -1,16 +1,27 @@
 <div class="chart-container">
+  <!-- Gráfico Pizza -->
+  <ngx-charts-pie-chart
+    [results]="pieChartData"
+    [view]="[width, height]"
+    [scheme]="colorScheme"
+    [doughnut]="true"
+    [gradient]="false"
+    [explodeSlices]="false"
 
+    [legend]="false"
+  
+    (select)="onSelect($event)">
+  </ngx-charts-pie-chart>
+
+  <!-- Legenda personalizada com bolinhas -->
   <div class="legend-container">
-    <!-- As bolinhas serão geradas aqui -->
+    <ul>
+      <li *ngFor="let item of pieChartData; let i = index" class="legend-item">
+        <!-- Bolinha colorida -->
+        <span class="legend-color" [ngStyle]="{'background-color': colorScheme.domain[i]}"></span>
+        <!-- Nome do item -->
+        <span class="legend-name">{{ item.name }}</span>
+      </li>
+    </ul>
   </div>
 </div>
-<ngx-charts-pie-chart
-  [results]="pieChartData"
-  [view]="[width, height]"
-  [doughnut]="true"
-  [gradient]="false"
-  [explodeSlices]="false"
-  [legend]="false"
-  (select)="onSelect($event)">
-</ngx-charts-pie-chart>
-

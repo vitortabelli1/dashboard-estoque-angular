@@ -3,7 +3,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PizzaChartComponent } from './pizza-chart/pizza-chart.component';
 import { DetalhamentoProdutosComponent } from './detalhamento-produtos/detalhamento-produtos.component';
-
+import { BarChartComponent } from './bar-chart/bar-chart.component';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,7 +13,10 @@ import { DetalhamentoProdutosComponent } from './detalhamento-produtos/detalhame
     SidebarComponent,
     DashboardComponent,
     PizzaChartComponent,
-    DetalhamentoProdutosComponent
+    DetalhamentoProdutosComponent,
+    BarChartComponent
+
+   
   ]
 })
 export class AppComponent {
