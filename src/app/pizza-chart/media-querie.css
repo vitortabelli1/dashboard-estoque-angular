@@ -12,7 +12,7 @@
 
     ngx-charts-pie-chart {
         width: 50%; /* Faz com que o gráfico ocupe toda a largura do container */
-        margin-left:200px;
+        margin-left:170px;
         height: 300px; /* Ajusta a altura do gráfico */
     }
     .legend-container {
