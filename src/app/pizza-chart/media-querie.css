@@ -1,0 +1,30 @@
+/* Media Query para telas de até 768px */
+@media (max-width: 768px) {
+    .chart-container {
+        flex-direction: column; /* Alinha o gráfico e a legenda em coluna */
+        width: 100%; /* Faz com que o container ocupe toda a largura disponível */
+        height: auto; /* Ajusta a altura automaticamente */
+        margin: 10px; /* Ajusta o espaçamento ao redor do container */
+        padding: 10px; /* Ajusta o padding interno */
+        border-radius: 8px; /* Ajusta o arredondamento das bordas */
+        border: 1px solid #f9f8f8; /* Ajusta a borda */
+    }
+
+    ngx-charts-pie-chart {
+        width: 50%; /* Faz com que o gráfico ocupe toda a largura do container */
+        margin-left:200px;
+        height: 300px; /* Ajusta a altura do gráfico */
+    }
+    .legend-container {
+        margin-top: -150px; /* Mantém a margem superior */
+        align-items: flex-start; /* Alinha os itens da legenda no início do container */
+    }
+
+    .legend-item {
+        margin-bottom: 8px; /* Ajusta a margem inferior */
+    }
+
+    .legend-name {
+        font-size: 10px; /* Ajusta o tamanho da fonte da legenda */
+    }
+}

@@ -1,27 +1,14 @@
 .sidebar {
-  width: 250px;
+  width: 190px;
   height: 100vh;
-  background-color: rgb(247, 245, 245); /* Fundo da sidebar */
+  background-color: rgb(251, 255, 255); /* Fundo da sidebar */
   color: white;
   position: fixed;
   top: 0;
   left: 0;
-
-
-
   padding: 10px;
 }
 
-.sidebar a {
-  text-decoration: none; /* Remove o sublinhado dos links */
-  padding: 8px 16px; /* Espaçamento interno */
-  display: flex; /* Organiza o ícone e o texto em linha */
-  color: #6f95c6; /* Cor do texto */
-  background-color: transparent; /* Garante que o fundo inicial seja transparente */
-  border-radius: 4px; /* Bordas arredondadas */
-  width: 100%; /* Faz os itens ocuparem a largura total */
-  justify-content: flex-start; /* Mantém o ícone e o texto alinhados à esquerda */
-}
 
 .menu-title {
   font-size: 14px; /* Tamanho do texto do título */
@@ -34,7 +21,8 @@
 
 .sidebar mat-icon {
   margin-right: 10px;
-  color: #6f95c6; /* Cor dos ícones */
+  margin-top: 20;
+  color: #4e6b91; /* Cor dos ícones */
 }
 
 .sidebar .menu-text {
@@ -43,16 +31,10 @@
 }
 
 .sidebar a:hover {
-  background-color: rgb(207, 210, 250);
-  border-bottom: 1px solid rgb(146, 48, 149); /* Risco azul menor */
+  background-color: transparent;
+  border-bottom: 3px solid rgb(146, 48, 149); /* Risco azul menor */
   padding-bottom: 4px; /* Espaçamento entre o texto e o risco */
-  color: #0033FF; /* Altera a cor do texto no hover */
+
 }
 
-.sidebar a:hover .menu-text, .sidebar a:hover mat-icon {
-  color: #0033FF; /* Cor do texto e ícone no hover */
-}
 
-.sidebar a.mat-list-item:hover {
-  background-color: transparent; /* Remove o fundo padrão do mat-list-item no hover */
-}

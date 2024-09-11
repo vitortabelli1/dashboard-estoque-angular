@@ -5,7 +5,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
   selector: 'app-bar-chart',
   standalone: true,
   templateUrl: './bar-chart.component.html',
-  styleUrls: ['./bar-chart.component.css'],
+  styleUrls: ['./bar-chart.component.css', 'media-querie.css'],
   imports: [NgxChartsModule] // Importa o módulo necessário aqui
 })
 export class BarChartComponent {

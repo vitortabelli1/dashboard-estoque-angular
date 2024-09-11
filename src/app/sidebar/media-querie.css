@@ -1,0 +1,32 @@
+/* Estilos para a sidebar em telas menores */
+@media (max-width: 768px) {
+    .sidebar {
+      width: 100%; /* Faz com que a sidebar ocupe toda a largura da tela */
+      height: auto; /* Ajusta a altura da sidebar para acomodar o conteúdo */
+      position: static; /* Remove a fixação na tela */
+      display: flex; /* Usa flexbox para o layout */
+      flex-direction: row; /* Alinha os itens horizontalmente */
+      justify-content: space-between; /* Espaça os itens igualmente */
+      padding: 10px;
+    }
+  
+    .menu-title {
+      display: none; /* Esconde a palavra "menu" em telas menores */
+    }
+  
+    .sidebar mat-icon {
+      margin: 0 10px; /* Ajusta o espaçamento dos ícones */
+      color: #4e6b91; /* Mantém a cor dos ícones */
+    }
+  
+    .sidebar .menu-text {
+      color: #460a58; /* Mantém a cor do texto */
+      font-size: 14px; /* Mantém o tamanho do texto */
+    }
+  
+    .sidebar a:hover {
+      background-color: transparent;
+      border-bottom: 3px solid rgb(146, 48, 149); /* Mantém o estilo do hover */
+      padding-bottom: 4px; /* Mantém o espaçamento entre o texto e o risco */
+    }
+}

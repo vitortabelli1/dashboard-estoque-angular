@@ -1,0 +1,58 @@
+/* Media Query para telas de até 768px */
+@media (max-width: 768px) {
+    .detalhamento-table {
+        width: 100%; /* Faz com que a tabela ocupe toda a largura disponível */
+        margin: 0; /* Remove a margem */
+        transform: scale(1); /* Remove a redução de escala */
+        font-size: 12px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+        border-collapse: collapse; /* Garante que as bordas colidam */
+    }
+
+    .detalhamento-table th, .detalhamento-table td {
+        padding: 8px; /* Ajusta o padding interno para maior conforto */
+        text-align: center; /* Alinha o texto ao centro */
+    }
+
+    .detalhamento-table th {
+        font-size: 12px; /* Ajusta o tamanho da fonte dos cabeçalhos */
+    }
+
+    .detalhamento-table td {
+        font-size: 12px; /* Ajusta o tamanho da fonte das células */
+    }
+
+    .filter-container {
+        margin-left: 0; /* Remove a margem esquerda */
+        padding: 10px; /* Ajusta o padding */
+        width: 100%; /* Faz com que o contêiner de filtros ocupe toda a largura disponível */
+    }
+
+    .filter-group {
+        flex-direction: column; /* Coloca os filtros em coluna */
+    }
+
+    .filter-group label,
+    .filter-group select,
+    .filter-group .abc-button {
+        font-size: 12px; /* Ajusta o tamanho da fonte para melhor legibilidade */
+    }
+
+    .filter-group .abc-button {
+        padding: 8px 10px; /* Ajusta o padding dos botões */
+        margin-right: 0; /* Remove a margem direita */
+    }
+
+    /* Ajuste específico para a posição do gráfico */
+    :host {
+        margin-top: -200px; /* Remove a margem superior */
+        margin-right: 0; /* Remove a margem direita */
+        width: 100%; /* Faz com que o contêiner do gráfico ocupe toda a largura disponível */
+        padding: 10px; /* Ajusta o padding */
+        box-shadow: none; /* Remove a sombra se necessário */
+    }
+
+    ngx-charts-bar-vertical {
+        width: 100%; /* Ajusta o gráfico para ocupar toda a largura do contêiner */
+        height: 200px; /* Ajusta a altura do gráfico */
+    }
+}

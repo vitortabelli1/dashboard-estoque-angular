@@ -11,7 +11,7 @@ import { MatCardModule } from '@angular/material/card';
     MatCardModule
   ],
   templateUrl: './dashboard.component.html',
-  styleUrls: ['./dashboard.component.css']
+  styleUrls: ['./dashboard.component.css', './media-querie.css']
 })
 export class DashboardComponent implements OnInit {
   totalFaturamento: number = 0;

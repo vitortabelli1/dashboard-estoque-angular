@@ -7,7 +7,7 @@ import { PizzaChartDataService } from '../services/pizza-chart-data.service';
   selector: 'app-pizza-chart',
   standalone: true,
   templateUrl: './pizza-chart.component.html',
-  styleUrls: ['./pizza-chart.component.css'],
+  styleUrls: ['./pizza-chart.component.css', './media-querie.css'],
   imports: [CommonModule, NgxChartsModule]
 })
 export class PizzaChartComponent implements OnInit {
@@ -19,7 +19,10 @@ export class PizzaChartComponent implements OnInit {
     name: 'customScheme',
     selectable: true,
     group: ScaleType.Ordinal,
-    domain: ['#BBDEFB', '#90CAF9', '#64B5F6', '#42A5F5', '#0D47A1']
+    domain: ['#8E44AD', '#33FF57', '#87CEEB', '#F1C40F', '#9B59B6']
+
+
+
 
 
 

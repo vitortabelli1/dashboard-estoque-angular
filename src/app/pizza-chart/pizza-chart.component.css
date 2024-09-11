@@ -27,7 +27,7 @@ ngx-charts-pie-chart {
 .legend-container {
   display: flex;
   flex-direction: column; /* Alinha itens da legenda em coluna */
-  margin-top: 40px; /* Remove a margem superior para que a legenda fique ao lado do gráfico */
+  margin-top: 10px; /* Remove a margem superior para que a legenda fique ao lado do gráfico */
 }
 
 .legend-item {
@@ -40,7 +40,7 @@ ngx-charts-pie-chart {
 .legend-color {
   width: 15px;
   height: 15px;
-  border-radius: 50%;
+  border-radius: 50px;
   margin-right: 10px;
 }
 

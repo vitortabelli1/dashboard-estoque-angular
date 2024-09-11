@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-detalhamento-produtos',
   templateUrl: './detalhamento-produtos.component.html',
-  styleUrls: ['./detalhamento-produtos.component.css'],
+  styleUrls: ['./detalhamento-produtos.component.css', './media-querie.css'],
   standalone: true,
   imports: [CommonModule]
 })

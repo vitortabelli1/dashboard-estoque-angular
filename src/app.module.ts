@@ -6,6 +6,9 @@ import { FormatNumberPipe } from './app/format-number.pipe';
 import { LegendComponent } from './app/legend/legend.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { WaveChartComponent } from './app/bar-chart/bar-chart.component';
+import { NumberFormatPipe } from './number-format.pipe';
+import { MatIconModule } from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -13,13 +16,15 @@ import { WaveChartComponent } from './app/bar-chart/bar-chart.component';
     AppComponent,
     FormatNumberPipe,
     LegendComponent,
-    WaveChartComponent
+    WaveChartComponent,
+    NumberFormatPipe
    
   ],
   imports: [
     BrowserModule,
     NgxChartsModule,
-    DetalhamentoProdutosModule // Importa o módulo que contém o componente
+    DetalhamentoProdutosModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

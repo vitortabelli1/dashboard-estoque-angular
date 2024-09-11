@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    :host {
+        position: relative; /* Altera o posicionamento para relativo */
+        top: auto; /* Remove a distância do topo */
+        right: auto; /* Remove a distância da direita */
+        margin-top: 60px; /* Remove a margem superior */
+        margin-left:80px; /* Remove a margem direita */
+        width: 100%; /* Faz com que o contêiner ocupe toda a largura da tela */
+        padding: 10px; /* Ajusta o padding para melhor ajuste em telas menores */
+    }
+
+    ngx-charts-bar-vertical {
+        width: 100%; /* Ajusta a largura do gráfico para ocupar toda a largura disponível */
+        height: 200px; /* Define uma altura fixa para o gráfico */
+    }
+}

@@ -1,4 +1,3 @@
-
 <div class="dashboard-content">
   <h3>Overview</h3>
   <div class="dropdown">
@@ -6,10 +5,15 @@
       Today
       <span class="dropdown-icon">▼</span>
     </button>
+  </div>
+
   <div class="dashboard-indicators">
     <mat-card class="indicator-card">
       <mat-card-title>
         Faturamento
+        <span class="indicator-icon" [ngClass]="{'positive': totalFaturamento >= 0, 'negative': totalFaturamento < 0}">
+          {{ totalFaturamento >= 0 ? '▲' : '▼' }}
+        </span>
       </mat-card-title>
       <mat-card-content>
         R$ {{ totalFaturamento | number: '1.2-2' }}
@@ -19,6 +23,9 @@
     <mat-card class="indicator-card">
       <mat-card-title>
         Valor de Estoque
+        <span class="indicator-icon" [ngClass]="{'positive': totalValorEstoque >= 0, 'negative': totalValorEstoque < 0}">
+          {{ totalValorEstoque >= 0 ? '▲' : '▼' }}
+        </span>
       </mat-card-title>
       <mat-card-content>
         R$ {{ totalValorEstoque | number: '1.2-2' }}
@@ -28,6 +35,9 @@
     <mat-card class="indicator-card">
       <mat-card-title>
         Ruptura de Estoque
+        <span class="indicator-icon" [ngClass]="{'positive': totalRupturaEstoque >= 0, 'negative': totalRupturaEstoque < 0}">
+          {{ totalRupturaEstoque >= 0 ? '▲' : '▼' }}
+        </span>
       </mat-card-title>
       <mat-card-content>
         {{ totalRupturaEstoque }}
@@ -37,6 +47,9 @@
     <mat-card class="indicator-card">
       <mat-card-title>
         Giro de Estoque
+        <span class="indicator-icon" [ngClass]="{'positive': totalGiroEstoque >= 0, 'negative': totalGiroEstoque < 0}">
+          {{ totalGiroEstoque >= 0 ? '▲' : '▼' }}
+        </span>
       </mat-card-title>
       <mat-card-content>
         {{ totalGiroEstoque }}
@@ -44,7 +57,6 @@
     </mat-card>
   </div>
 
-  <!-- Charts and Tables -->
   <div class="dashboard-charts">
     <!-- Add your charts here -->
   </div>

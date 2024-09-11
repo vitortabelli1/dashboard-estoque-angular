@@ -1,0 +1,29 @@
+/* Responsividade para telas menores, como iPhone 12 */
+@media (max-width: 768px) {
+    .dashboard-content {
+        margin-left: 0;
+    }
+
+    .dropdown-button {
+        margin: 0;
+        font-size: 14px; /* Aumenta o tamanho da fonte em telas menores para melhor legibilidade */
+    }
+
+    .dashboard-indicators {
+        flex-direction: column; /* Alinha os cartões verticalmente em telas menores */
+        gap: 10px; /* Ajusta o espaçamento entre os cartões */
+    }
+
+    .dashboard-content h3 {
+        position: relative;
+        top: 5px; /* Mova apenas o <h3> para baixo */
+        left:8px;
+        font-size: 14px;
+    }
+    .indicator-card {
+        flex: 1 1 auto; /* Faz com que os cartões ocupem a largura total */
+        max-width: 100%; /* Permite que os cartões usem toda a largura disponível */
+        max-height: none; /* Remove a limitação de altura */
+        font-size: 14px; /* Ajusta o tamanho da fonte do cartão */
+    }
+}
